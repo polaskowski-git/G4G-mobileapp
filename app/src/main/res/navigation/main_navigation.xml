@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="apk.put.green4go.signup.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/register_to_dashboard"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="apk.put.green4go.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/main_to_registration"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/main_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="apk.put.green4go.signup.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/login_to_dashboard"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="apk.put.green4go.main.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/dashboard_to_create_training"
+            app:destination="@id/createTrainingStart" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTrainingStart"
+        android:name="apk.put.green4go.trainingCreation.createTrainingStart"
+        android:label="fragment_create_training_start"
+        tools:layout="@layout/fragment_create_training_start" >
+        <action
+            android:id="@+id/create_to_training"
+            app:destination="@id/createTrainingMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTrainingMainFragment"
+        android:name="apk.put.green4go.trainingCreation.createTrainingMainFragment"
+        android:label="fragment_create_training_main"
+        tools:layout="@layout/fragment_create_training_main" >
+        <action
+            android:id="@+id/create_training_main_to_add_round"
+            app:destination="@id/createTrainingAddRoundFragment" />
+        <action
+            android:id="@+id/finish_training_creation"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTrainingAddRoundFragment"
+        android:name="apk.put.green4go.trainingCreation.createTrainingAddRoundFragment"
+        android:label="fragment_create_training_add_round"
+        tools:layout="@layout/fragment_create_training_add_round" />
+</navigation>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Green4Go</string>
+    <string name="username">Username</string>
+    <string name="enter_username">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="enter_password_again">Enter your password again</string>
+    <string name="registration">Registration</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="email_address">Email address</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="or_login_here">or Log In here if u have an account</string>
+    <string name="register_now">Register now</string>
+    <string name="passwords_not_matching">Passwords are not matching</string>
+    <string name="please_enter_valid_email">Typed email is incorrect, please enter valid email.</string>
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="points">Points:</string>
+    <string name="training_length">Length of training:</string>
+    <string name="training_streak">Training streak:</string>
+    <string name="start_training">Start training</string>
+    <string name="name_of_training">Name of training</string>
+    <string name="number_of_rounds">Number of rounds</string>
+    <string name="continue_string">Continue</string>
+    <string name="distance_from_target">Distance from target (m)</string>
+    <string name="weapon_used">Weapon used</string>
+    <string name="training">Training</string>
+    <string name="add_round">Add round</string>
+    <string name="accuracy">Accuracy:</string>
+    <string name="precision">Precision:</string>
+    <string name="overall_score">Overall score:</string>
+    <string-array name="weapon_array">
+        <item>TEC-9</item>
+        <item>Glock</item>
+        <item>Desert Eagle</item>
+    </string-array>
+</resources>
